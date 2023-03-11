@@ -5,14 +5,7 @@ const db = nano.use("users");
 
 
 router.get('/dashboard', (req , res) => {
-    const getUserData = async () => {
-        const getFromDB = await db.get("94432c8463b83dc85c49ed829600022d");
-        return getFromDB
-    }    
-    (async () => {
-         const data = await getUserData();
-         res.render('dash', { displayname: "Jack", amount: 50000, id: "A123456789", history: [] });
-    })();
+      res.render('dash', { displayname: "Jack", amount: 50000, id: "A123456789", history: [] });
 });
 
 
