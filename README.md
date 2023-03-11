@@ -26,9 +26,11 @@
 
 
 ## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+- node         - version 13.12.6
+- express      - version 4.18.2
+- ejs          - version 3.1.8
+- nano         - version 10.1.2
+- fontawesome  - version 5.14.8
 
 
 ## Features
