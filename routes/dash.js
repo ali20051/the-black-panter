@@ -11,7 +11,7 @@ router.get('/dashboard', (req , res) => {
     }    
     (async () => {
          const data = await getUserData();
-         res.render('dash', { displayname: data.displayname, amount: data.amount, id: data.appid, history: data.history });
+         res.render('dash', { displayname: "Jack", amount: 50000, id: "A123456789", history: [] });
     })();
 });
 
