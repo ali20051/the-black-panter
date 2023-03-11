@@ -2,6 +2,7 @@ const express = require("express");
 const app     = express();
 const path    = require("path");
 const bodyParser = require("body-parser");
+const PORT = process.env.PORT || 3000;
 
 // make the public dir for public 
 app.use("/public", express.static(path.join(__dirname, "public")));
@@ -21,6 +22,6 @@ app.use(dashboard);
 
 
 // app port 
-app.listen(3000 , () => {
-    console.log('server started');
+app.listen(PORT , () => {
+    console.log(`server Started ON PORT ${PORT}`);
 });
